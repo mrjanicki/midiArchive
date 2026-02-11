@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSX School Session</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hud-wrap">
+    <h1>PSX SCHOOL SESSION</h1>
+    <p class="subtitle">Tony Hawk Pro Skater 2 inspired mini jam</p>
+    <div class="controls">
+      <span><strong>Arrows</strong>: steer + push</span>
+      <span><strong>S</strong>: ollie / jump</span>
+      <span><strong>A</strong>: kickflip</span>
+      <span><strong>D</strong>: grab</span>
+      <span><strong>W</strong>: grind</span>
+    </div>
+    <button id="startAudio">Start Retro Soundtrack</button>
+  </div>
+
+  <canvas id="game" width="960" height="540" aria-label="Skateboarding game"></canvas>
+
+  <div class="panel">
+    <div id="score">Score: 0</div>
+    <div id="combo">Combo: -</div>
+    <div id="state">State: rolling</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

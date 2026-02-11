@@ -1,0 +1,75 @@
+:root {
+  --bg: #0a0f22;
+  --panel: #181c33;
+  --ink: #f7f0c8;
+  --accent: #ff6b6b;
+  --psx-blue: #67a3ff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: radial-gradient(circle at top, #1a2150, var(--bg) 70%);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.hud-wrap {
+  text-align: center;
+  background: color-mix(in oklab, var(--panel), black 15%);
+  border: 2px solid var(--psx-blue);
+  padding: 10px 16px;
+  width: min(960px, 95vw);
+  image-rendering: pixelated;
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+  text-shadow: 2px 2px #000;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin: 6px 0;
+  color: #aad4ff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+button {
+  border: 2px solid #fff;
+  background: #223061;
+  color: #fff;
+  padding: 6px 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+canvas {
+  border: 4px solid #fff;
+  width: min(960px, 95vw);
+  aspect-ratio: 16/9;
+  image-rendering: pixelated;
+  background: #6da9ff;
+}
+
+.panel {
+  width: min(960px, 95vw);
+  display: flex;
+  justify-content: space-between;
+  background: var(--panel);
+  border: 2px solid var(--psx-blue);
+  padding: 8px 10px;
+}
