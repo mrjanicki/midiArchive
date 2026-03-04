@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, #34324f 0%, #14121f 45%, #0a0912 100%);
+  color: #f7f6f2;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hud h1 {
+  margin: 0;
+  letter-spacing: 0.03em;
+  font-size: 1.3rem;
+}
+
+.hud p {
+  margin: 0.25rem 0;
+  color: #d6d2cc;
+}
+
+#status {
+  color: #f8cc70;
+}
+
+#game {
+  width: 100%;
+  border: 2px solid #6e5f82;
+  background: #0f1122;
+  image-rendering: pixelated;
+  box-shadow: 0 0 24px #000;
+}
