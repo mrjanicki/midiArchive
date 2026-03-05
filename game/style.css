@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Verdana", "Tahoma", system-ui, sans-serif;
+  image-rendering: pixelated;
+  background: #10131a;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 10;
+  color: #f2f4fc;
+  background: rgb(0 0 0 / 52%);
+  border: 2px solid #8ea4d6;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 45%);
+  text-shadow: 1px 1px 0 #000;
+  padding: 0.65rem 0.85rem;
+  max-width: min(38rem, 92vw);
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(0.95rem, 3.2vw, 1.35rem);
+}
+
+p {
+  margin: 0.2rem 0;
+  font-size: clamp(0.72rem, 2vw, 0.95rem);
+}
